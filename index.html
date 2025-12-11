@@ -14,20 +14,87 @@
         </div>
         <div class="content">
             <div class="text-description">
-                <p><span class="title_content">DATASET <br /></span> This Data Device uses the real time UCL Library booking API for study availability data, suppmented with simulated environmental comfort data (noise, light, temperature, occupancy) to demonstrate monitoring capability. Study space coverage limited to UCL East Library.</p>
+                <p><span class="title_content">DATASET <br /></span> This Data Device uses the real time UCL Library
+                    booking API for study availability data, suppmented with simulated environmental comfort data
+                    (noise, light, temperature, occupancy) to demonstrate monitoring capability. Study space coverage
+                    limited to UCL East Library.</p>
 
-                <p><span class="title_content">DATA DEVICE (Physical)<br /></span> The data is visually represented using a tabletop display consisting of five NeoPixel LED rings(24 LEDs each) representing different study spaces, with two physical buttons-one to switch between Space Availability mode and Current Environmental Condition mode.</p>
+                <p><span class="title_content">DATA DEVICE (Physical)<br /></span> The data is visually represented
+                    using a tabletop display consisting of five NeoPixel LED rings(24 LEDs each) representing different
+                    study spaces, with two physical buttons-one to switch between Space Availability mode and Current
+                    Environmental Condition mode.</p>
 
-                <p><span class="title_content">DATA DEVICE (Digital)<br /></span> The Digital Twin of the data device provides additional information. A unity-based-digital visualization that mirrors the physical display, supplemented by showing real-time booking status information, historical trends, colour-coded availability, and comfort indicators for the study spaces. The digital interface acts as an extended dashboard accessible on screen.</p>
+                <p><span class="title_content">DATA DEVICE (Digital)<br /></span> The Digital Twin of the data device
+                    provides additional information. A unity-based-digital visualization that mirrors the physical
+                    display, supplemented by showing real-time booking status information, historical trends,
+                    colour-coded availability, and comfort indicators for the study spaces. The digital interface acts
+                    as an extended dashboard accessible on screen.</p>
 
-                <p><span class="title_content">HOW TO<br /></span> To use the device, press the Mode button to switch between Study Space Availability and Current Environmental Conditions, where each NeoPixel ring instantly updates to show the real-time status of its corresponding study area. In Availability mode, the rings use colour-coded indicators (green/yellow/red) to show how busy each space is based on UCL’s live booking data; in Condition mode, the rings visualise simulated comfort levels (noise, light, temperature) through colour and motion effects. For the digital twin, open the App and point it at the screen of the Data Device. The Augmented information will overlay with the Data Device. The digital Unity-based dashboard mirrors these behaviours, allowing users to view detailed room information, historical trends, and extended context while the physical device provides an at-a-glance ambient display.</p>
+                <p><span class="title_content">HOW TO<br /></span> To use the device, press the Mode button to switch
+                    between Study Space Availability and Current Environmental Conditions, where each NeoPixel ring
+                    instantly updates to show the real-time status of its corresponding study area. In Availability
+                    mode, the rings use colour-coded indicators (green/yellow/red) to show how busy each space is based
+                    on UCL’s live booking data; in Condition mode, the rings visualise simulated comfort levels (noise,
+                    light, temperature) through colour and motion effects. For the digital twin, open the App and point
+                    it at the screen of the Data Device. The Augmented information will overlay with the Data Device.
+                    The digital Unity-based dashboard mirrors these behaviours, allowing users to view detailed room
+                    information, historical trends, and extended context while the physical device provides an
+                    at-a-glance ambient display.
+                <p>🔄 <strong>Rotate Dial</strong><br>
+                    Switch between rooms</p>
+
+                <p>⭕ <strong>Press Dial</strong><br>
+                    Switch mode:</p>
+                <ul>
+                    <li><strong>Bookings</strong> (availability today)</li>
+                    <li><strong>Condition</strong> (comfort levels)</li>
+                </ul>
+
+                <h3>💡 LED Ring (Bookings Mode)</h3>
+                <p>
+                    🟥 <strong>Booked</strong> &nbsp;&nbsp;&nbsp; 🟩 <strong>Free</strong><br>
+                    24 LEDs = today (09:00–21:00)
+                </p>
+
+                <h3>🎛 LED Bar (Condition Mode)</h3>
+                <p>
+                    Each color shows a different attribute.<br>
+                    More LEDs = higher intensity.<br>
+                    Scale is automatic and based on live readings.
+                </p>
+
+                <h4>🔵 Occupancy (0–100%)</h4>
+                <ul>
+                    <li>0 LEDs = 0%</li>
+                    <li>24 LEDs = 100%</li>
+                    <li>≈ 4% per LED</li>
+                </ul>
+
+                <h4>🟡 Noise (30–80 dB)</h4>
+                <ul>
+                    <li>0 LEDs = 30 dB (quiet)</li>
+                    <li>24 LEDs = 80 dB (loud)</li>
+                    <li>≈ 2.1 dB per LED</li>
+                </ul>
+
+                <h4>🟩 Temperature (17–29°C)</h4>
+                <ul>
+                    <li>0 LEDs = 17°C (cold)</li>
+                    <li>24 LEDs = 29°C (warm)</li>
+                    <li>≈ 0.5°C per LED</li>
+                </ul>
+
+                <h4>⚪ Light (100–600 lux)</h4>
+                <ul>
+                    <li>0 LEDs = 100 lux (dim)</li>
+                    <li>24 LEDs = 600 lux (bright)</li>
+                    <li>≈ 21 lux per LED</li>
+                </ul>
+                </p>
             </div>
             <div class="media">
-                <img src="./1.jpg"
-                    alt="Image">
-                <video
-                    src="./1.mp4"
-                    controls></video>
+                <img src="./1.jpg" alt="Image">
+                <video src="./1.mp4" controls></video>
             </div>
         </div>
         <div class="footer">
